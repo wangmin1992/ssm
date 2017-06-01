@@ -1,0 +1,13 @@
+SSM框架搭建：
+Spring + SpringMVC + MyBatis框架（SSM）是比较热门的中小型企业级项目开发的框架。
+
+       表现层（SpringMVC）             ======》
+       业务层（service接口）          =====》
+       持久层（mybatis）                ======》 
+       数据库（MySQL，oracle等等）
+       
+描述：
+Spring将各层进行整合，通过Spring管理持久层的mapper（相当于dao接口）
+                                    通过Spring管理业务层service，service中可调用mapper接口，Spring进行事务控制
+                                    通过Spring管理表现层Handler，Handler中可调用service接口
+mapper，service，Handler都是Javabeen                                      

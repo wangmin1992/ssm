@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 整合dao层，因为MyBatis交给Spring管理，因此Mapper在Spring中配置，此处的配置只打开二级缓存 -->
+<configuration>
+	<settings>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+</configuration>
